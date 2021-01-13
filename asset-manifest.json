@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Angry-Hamster/goit-react-hw-03-image-finder/static/css/main.6dd3be97.chunk.css",
+    "main.js": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/main.2a689767.chunk.js",
+    "main.js.map": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/main.2a689767.chunk.js.map",
+    "runtime-main.js": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/runtime-main.46807c09.js",
+    "runtime-main.js.map": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/runtime-main.46807c09.js.map",
+    "static/js/2.b1e3444a.chunk.js": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/2.b1e3444a.chunk.js",
+    "static/js/2.b1e3444a.chunk.js.map": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/2.b1e3444a.chunk.js.map",
+    "index.html": "/Angry-Hamster/goit-react-hw-03-image-finder/index.html",
+    "static/css/main.6dd3be97.chunk.css.map": "/Angry-Hamster/goit-react-hw-03-image-finder/static/css/main.6dd3be97.chunk.css.map",
+    "static/js/2.b1e3444a.chunk.js.LICENSE.txt": "/Angry-Hamster/goit-react-hw-03-image-finder/static/js/2.b1e3444a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.46807c09.js",
+    "static/js/2.b1e3444a.chunk.js",
+    "static/css/main.6dd3be97.chunk.css",
+    "static/js/main.2a689767.chunk.js"
+  ]
+}
