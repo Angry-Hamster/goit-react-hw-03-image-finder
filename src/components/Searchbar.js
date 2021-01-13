@@ -12,6 +12,7 @@ class Searchbar extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
+    this.state.qwery !== '' &&
     this.props.getQwery(this.state.qwery)
     this.claerForm()
   };
