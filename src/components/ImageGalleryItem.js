@@ -2,12 +2,8 @@ import React, { Component } from "react";
 import PropTypes from 'prop-types';
 
 class ImageGalleryItem extends Component {
-  state = {
-    largeImageURL: this.props.largeImageURL
-  }
-
   openModal = () => {
-    this.props.openModal(this.state.largeImageURL)
+    this.props.openModal(this.props.largeImageURL)
   }
 
   render() {
