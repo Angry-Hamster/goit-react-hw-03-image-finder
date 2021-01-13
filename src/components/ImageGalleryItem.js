@@ -19,4 +19,9 @@ class ImageGalleryItem extends Component {
   }
 }
 
+ImageGalleryItem.propTypes  = {
+  webformatURL: PropTypes.string,
+  id: PropTypes.string,
+}
+
 export default ImageGalleryItem;

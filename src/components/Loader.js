@@ -34,4 +34,8 @@ class Loader extends Component {
   }
 }
 
+Loader.propTypes  = {
+  url: PropTypes.string,
+}
+
 export default Loader;
