@@ -17,6 +17,13 @@ class App extends Component {
     isOpenLoader: false,
   };
 
+  goToBootm = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   handleGetQwery = (q) => {
     this.setState({ info: { qwery: q, page: 2 } });
 
@@ -58,8 +65,14 @@ class App extends Component {
   };
 
   changeLoader = (bool) => {
+    bool && this.goToBootm();
     this.setState({ isOpenLoader: bool });
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    prevState.content !== this.state.content && this.goToBootm();
+    return prevState.content !== this.state.content;
+  }
 
   render() {
     return (
