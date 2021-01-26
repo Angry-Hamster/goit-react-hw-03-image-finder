@@ -21,4 +21,8 @@ ImageGalleryItem.propTypes  = {
   id: PropTypes.number,
 }
 
+ImageGalleryItem.propDefault = {
+  webformatURL: 'https://cdn.icon-icons.com/icons2/1489/PNG/512/loadingcircles_102612.png'
+}
+
 export default ImageGalleryItem;

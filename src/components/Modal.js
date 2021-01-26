@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 
 class Modal extends Component {
   componentDidMount(){
@@ -26,6 +27,14 @@ class Modal extends Component {
       </div>
     );
   }
+}
+
+Modal.propTypes  = {
+  url: PropTypes.string,
+}
+
+Modal.propDefault = {
+  url: 'https://cdn.icon-icons.com/icons2/1489/PNG/512/loadingcircles_102612.png'
 }
 
 export default Modal;
