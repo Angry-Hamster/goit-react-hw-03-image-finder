@@ -20,12 +20,14 @@ class App extends Component {
   handleGetQwery = (q) => {
     this.setState({ info: { qwery: q, page: 2 } });
 
-    this.changeLoader(true)
-    this.callToServer(q, 1).then((data) => {
-      this.setState({ content: [...data.hits] });
-    });
-
-    this.changeLoader(false)
+    this.changeLoader(true);
+    this.callToServer(q, 1)
+      .then((data) => {
+        this.setState({ content: [...data.hits] });
+      })
+      .finally(() => {
+        this.changeLoader(false);
+      });
   };
 
   callToServer = (q, page) => {
@@ -44,19 +46,20 @@ class App extends Component {
     const { qwery, page } = this.state.info;
     this.setState((prev) => ({ info: { page: prev.info.page + 1, qwery: prev.info.qwery } }));
 
-    this.changeLoader(true)
+    this.changeLoader(true);
 
-    this.callToServer(qwery, page).then((data) => {
-      this.setState((prev) => ({ content: [...prev.content, ...data.hits] }));
-    });
-
-    this.changeLoader(false)
+    this.callToServer(qwery, page)
+      .then((data) => {
+        this.setState((prev) => ({ content: [...prev.content, ...data.hits] }));
+      })
+      .finally(() => {
+        this.changeLoader(false);
+      });
   };
 
   changeLoader = (bool) => {
-    bool ? console.time('Load Time:') : console.timeEnd('Load Time:')
     this.setState({ isOpenLoader: bool });
-  }
+  };
 
   render() {
     return (

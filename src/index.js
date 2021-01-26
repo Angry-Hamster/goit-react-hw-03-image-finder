@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-console.time('Render Time:')
+console.time('Render Time')
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,4 +12,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-console.timeEnd('Render Time:')
+console.timeEnd('Render Time')
